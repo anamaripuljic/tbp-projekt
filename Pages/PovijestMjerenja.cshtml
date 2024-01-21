@@ -1,0 +1,34 @@
+﻿@page
+@model tbp_projekt.Pages.PovijestMjerenjaModel
+@{
+}
+
+<div>
+    <h1>Povijest mjerenja</h1>
+
+    <div>
+        <form method="post" action="" class="form-horizontal">
+        <label class="control-label">Unesite biljku čije vrijednosti želite provjeriti</label><br />
+            <select id="biljke" class="form-control">
+                @foreach (var biljka in Model.Biljke)
+                {
+                    <option value="@biljka.Id_biljka">@biljka.Vrsta</option>
+                }
+            </select><br />
+
+
+
+        <label class="control-label">Unesite datume za koje želite provjeriti prosječne vrijednosti mjerenja</label><br />
+        <label>od</label>
+            <input class="form-control" placeholder="GGGG-MM-DD" />
+        <label>do</label>
+            <input class="form-control" placeholder="GGGG-MM-DD" /><br />
+            <button type="submit" class="btn btn-primary mb-2">Spremi</button>
+    </form>
+
+        <label class="control-label">Prosječna temperatura je:</label><br />
+        <label class="control-label">Prosječna vlažnost zraka je:</label>
+
+    </div><br />
+
+</div>

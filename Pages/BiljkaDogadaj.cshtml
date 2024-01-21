@@ -1,0 +1,25 @@
+﻿@page
+@model tbp_projekt.Pages.BiljkaDogadajModel
+
+
+<div>
+    <form method="post" class="form-horizontal" action="">
+        <h1>Unos obaveza vezanih za biljku</h1>
+
+        <label>Vrsta biljke</label>
+        <input asp-for="@Model.Biljka.Vrsta" readonly class="form-control" /><br />
+
+        <label>Odaberite događaj:</label>
+        <select id="dogadaji" asp-for="@Model.IdDogadaj" asp-items="Model.DogadajZaOdabir" required class="form-control">
+            
+        </select><br />
+
+
+        <label>Učestalost događaja izražena u danima</label>
+        <input asp-for="@Model.Ucestalost" class="form-control" /><br />
+
+        <button type="submit" class="btn btn-primary mb-2">Unesi</button>
+
+    </form>
+
+</div>

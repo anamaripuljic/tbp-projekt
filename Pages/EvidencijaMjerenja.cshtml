@@ -1,0 +1,45 @@
+﻿@page
+@model tbp_projekt.Pages.EvidencijaMjerenjaModel
+@{
+}
+
+<div>
+    <h1>Evidencija mjerenja podataka biljke</h1>
+
+    <div class="col-md-12">
+        <form method="post" action="" class="form-horizontal">
+
+            <div class="form-group">
+                <label class="control-label">Biljka</label>
+                <input asp-for="Biljka.Vrsta" class="form-control" readonly />
+            </div><br />
+            <div class="form-group">
+                <label class="control-label">Datum mjerenja</label>
+                <input asp-for="PodaciEvidencija1.Datum" class="form-control" />
+            </div><br />
+            <div class="form-group">
+                <label class="control-label">Vlažnost zraka</label>
+                <input asp-for="PodaciEvidencija1.Vlaznost_zraka" placeholder="Broj izražen u %" class="form-control" />
+            </div><br />
+            <div class="form-group">
+                <label class="control-label">Intezitet svjetla</label>
+                <input asp-for="PodaciEvidencija1.Intezitet_svjetla" class="form-control" />
+            </div><br />
+            <div class="form-group">
+                <label class="control-label">Temperatura</label>
+                <input asp-for="PodaciEvidencija1.Temperatura" placeholder="Broj izražen u °C" class="form-control" />
+            </div><br />
+            <div class="form-group">
+                <label class="control-label">Veličina biljke</label>
+                <input asp-for="PodaciEvidencija1.Velicina_biljke" class="form-control" />
+            </div><br />
+           
+
+            <button type="submit" class="btn btn-primary mb-2">Spremi</button>
+        </form>
+    </div>
+
+
+
+
+</div>

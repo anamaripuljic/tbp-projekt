@@ -1,0 +1,21 @@
+﻿@page
+@model tbp_projekt.Pages.PodsjetnikModel
+@{
+}
+
+<div>
+    <h1>Podsjetnik</h1>
+
+    @foreach(var podsjetnik in Model.KorisnikoviPodsjetnici)
+    {
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item">@podsjetnik.VrstaBiljke</li>
+            <li class="list-group-item">@podsjetnik.Datum</li>
+            <li class="list-group-item">@podsjetnik.Opis</li>
+            
+        </ul>
+    }
+
+
+
+</div>

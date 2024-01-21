@@ -1,0 +1,28 @@
+﻿@page
+@model tbp_projekt.Pages.MojeBiljkeModel
+@{
+}
+
+<div>
+
+    <h1>Moje biljke</h1>
+
+    <form method="post" action="">
+    <div class="col-7 row"
+    <label class="col-3">Popis mojih biljaka</label>
+    
+    <select id="biljke" asp-for="IdBiljka" class="col-4 form-control">
+        @foreach( var biljka in Model.Korisnikove_biljke)
+        {
+        <option value="@biljka.Id_biljka">@biljka.Vrsta</option>
+        }
+    </select><br />
+    <div class="row">
+    <button type="submit" class="btn btn-primary mb-2 " name="evidencija" value="evidencija">Dodaj evidenciju za biljku</button><br />
+
+    <button type="submit" class="btn btn-primary mb-2 " name="obaveze" value="obaveze">Unesi obaveze u vezi biljke</button>
+        </div>
+        </div>
+    </form>
+</div>
+

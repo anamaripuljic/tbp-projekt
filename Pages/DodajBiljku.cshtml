@@ -1,0 +1,80 @@
+﻿@page
+@model tbp_projekt.Pages.DodajBiljkuModel
+@{
+}
+
+<div>
+<h1>Dodaj biljku</h1>
+
+        <div class="col-10 row" >
+            <form method="post" class="form-horizontal">
+          
+            <div class="row">
+                    <label class="col-sm-4">Vrsta biljke</label><br />
+                    <input asp-for="Biljka1.Vrsta" class="col-6"/>
+            </div><br />
+
+                <div class="row">
+                <label class="col-sm-4">Datum sadnje</label>
+                <input asp-for="Biljka1.Datum_sadnje" placeholder="GGGG-MM-DD" class="col-sm-6" />
+            </div><br />
+
+                <div class="row">
+                <label class="col-sm-4">Opis</label>
+                <textarea asp-for="Biljka1.Opis" class="col-sm-6"></textarea>
+                </div><br />
+
+                <div class="row">
+                <label class="col-sm-4">Lokacija i stanište</label>
+                <input asp-for="Biljka1.Lokacija_staniste" class="col-sm-6" />
+                </div><br />
+
+                <div class="row">
+                <label class="col-sm-4">Veličina biljke</label>
+                <input asp-for="Biljka1.Velicina_biljke" class="col-sm-6" />
+                </div><br />
+
+                <div class="row">
+                <label class="col-sm-4">Idealna temperatura</label>
+                <input asp-for="Biljka1.Temperatura" class="col-sm-6" />
+                </div><br />
+
+                <div class="row">
+                <label class="col-sm-4">Intezitet svjetla (najpogodniji za biljku) </label>
+                <input asp-for="Biljka1.Intezitet_svjetla" class="col-sm-6" />
+                </div><br />
+
+                <div class="row">
+                <label class="col-sm-4">Učestalost zalijevanja</label>
+                <input asp-for="Biljka1.Ucestalost_zalijevanja" class="col-sm-6" />
+                </div><br />
+
+                <div class="row">
+                <label class="col-sm-4">Razdoblje cvata</label>
+                <input asp-for="Biljka1.Razdoblje_cvata" class="col-sm-6" />
+                </div><br />
+
+                <div class="row">
+                <label class="col-sm-4">Razdoblje gnojidbe</label>
+                <input asp-for="Biljka1.Razdoblje_gnojidbe" class="col-sm-6" />
+                </div><br />
+
+                <div class="row">
+                <label class="col-sm-4">Zemljište</label>
+                <input asp-for="Biljka1.Zemljiste" class="col-sm-6" />
+                </div><br />
+
+                <div class="row">
+                <label class="col-sm-4">Vrsta posude</label>
+                <input asp-for="Biljka1.Vrsta_posude" class="col-sm-6" />
+                </div><br />
+
+            <div class="row">
+                <label class="col-sm-4"></label>
+            <button type="submit" class="btn-primary col-sm-6">Spremi</button>
+            </div><br />
+           
+            </form>
+        </div>
+
+</div>

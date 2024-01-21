@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">GreenGrowth Monitor</h1>
+    <h2>Prijava</h2>
+   
+    <div class="col-md-12">
+        <form method="post" action="" class="form-horizontal">
+            <div class="form-group">
+                <label id="korime">Korisničko ime</label>
+                <input asp-for="Korisnik1.Kor_ime" class="form-control" />
+            </div><br />
+            <div class="form-group">
+                <label class="control-label" id="lozinka">Lozinka</label>
+                <input asp-for="Korisnik1.Lozinka" type="password" class="form-control" />
+            </div><br />
+            <button type="submit" class="btn-primary">Spremi</button>
+        </form>
+    </div>
+
+    
+</div>
